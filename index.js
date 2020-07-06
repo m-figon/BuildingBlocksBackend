@@ -9,12 +9,12 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res, next) => { //home page
   res.set('Content-Type', 'text/html');
   res.send(Buffer.from(`<h2>Welcome to json server</h2>`));
 });
 
-CSVToJSON().fromFile('Ogel.Production.csv')
+CSVToJSON().fromFile('Ogel.Production.csv') //csv to json converting
   .then(users => {
     console.log(users);
     fs.writeFile('OgelProduction.json', JSON.stringify(users), function (err) {
@@ -23,7 +23,7 @@ CSVToJSON().fromFile('Ogel.Production.csv')
   }).catch(err => {
     console.log(err);
   });
-CSVToJSON().fromFile('Ogel.Runtime.csv')
+CSVToJSON().fromFile('Ogel.Runtime.csv') //csv to json converting
   .then(users => {
     console.log(users);
     fs.writeFile('OgelRuntime.json', JSON.stringify(users), function (err) {
@@ -35,10 +35,10 @@ CSVToJSON().fromFile('Ogel.Runtime.csv')
 
 
 
-app.get('/Production', (req, resp) => {
+app.get('/Production', (req, resp) => { //OgelProduction.json file url
   resp.json(Production);
 });
-app.get('/Runtime', (req, resp) => {
+app.get('/Runtime', (req, resp) => { //OgelRuntime.json file url
   resp.json(Runtime);
 });
 
