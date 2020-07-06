@@ -8,4 +8,4 @@
 
  ## page link
 
- https://app.netlify.com/sites/building-blocks-assessment
+https://building-blocks-assessment.netlify.app/
