@@ -1,6 +1,12 @@
 # Building Blocks Backend App using Heroku
  
- This is a simple node.js/express application used to convert csv file to json file and to make it possible for front-end app to get json data
+-This is a node.js/express application
+
+-It converts csv file to json file
+
+-It makes it possible for front-end app to get json data
+
+-Main file is index.js
 
  ## front-end source code
 
