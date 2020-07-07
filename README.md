@@ -9,3 +9,7 @@
  ## page link
 
 https://building-blocks-assessment.netlify.app/
+
+## video presentation link
+
+https://drive.google.com/file/d/1Q9GbHAyCiXcU62XjClcSkp70bP_5G2hE/view?usp=sharing
